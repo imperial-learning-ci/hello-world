@@ -3,7 +3,7 @@
 
 Here, we will set up a first Travis CI job, based around a simple "hello world" example, to get you up and running with Travis CI.
 
-[Source](https://raw.githubusercontent.com/softwaresaved/build_and_test_examples/master/travis/HelloWorld.md).
+[Source](https://github.com/softwaresaved/build_and_test_examples/blob/master/travis/HelloWorld.md).
 
 Sign in to GitHub
 -----------------
@@ -12,14 +12,9 @@ If you do not already have an account, then visit [GitHub](https://github.com) a
 
 If you already have an account, then visit [GitHub](https://github.com) and sign in.
 
-In the following text, replace `USERNAME` with your GitHub user name.
+Create a new empty repository.
 
-Fork this repository on GitHub
-------------------------------
-
-* Visit https://github.com/softwaresaved/build_and_test_examples.
-* Click Fork.
-* If asked "Where should we fork this repository?", select your account.
+In the following text, replace `USERNAME` and `REPO` with your GitHub user name and the name for a repository that you have created.
 
 Sign in to Travis CI
 --------------------
@@ -36,8 +31,8 @@ Now, tell Travis CI to check for changes in your repository:
 
 * Click on your name on the top-right of the Travis CI page.
 * This page shows a list of your GitHub repositories that Travis CI knows about.
-* If you cannot see `USERNAME/build_and_test_examples`, then click the Sync button.
-* Once you can see `USERNAME/build_and_test_examples`, then click on the repository switch (the X button) so that Travis CI knows to check that repository for changes.
+* If you cannot see `USERNAME/REPO`, then click the Sync button.
+* Once you can see `USERNAME/REPO`, then click on the repository switch (the X button) so that Travis CI knows to check that repository for changes.
 
 Clone your fork locally
 -----------------------
@@ -45,8 +40,8 @@ Clone your fork locally
 * Within a command-line shell, clone your fork:
 
 ```
-$ git clone https://github.com/USERNAME/build_and_test_examples
-$ cd build_and_test_examples
+$ git clone https://github.com/USERNAME/REPO
+$ cd REPO
 ```
 
 Create a "hello world" `.travis.yml` job file
@@ -87,7 +82,7 @@ Explore the Travis CI job information
 Travis CI provides a page summarising the most recent jobs run for your repositories:
 
 * Visit https://travis-ci.org/USERNAME.
-* You should see a job called `build_and_test_examples` - jobs are named after the corresponding repositories.
+* You should see a job called `REPO` - jobs are named after the corresponding repositories.
 * The job should be coloured green and with a tick mark meaning the build succeeded.
 * Click on this job.
 
